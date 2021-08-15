@@ -48,7 +48,7 @@
               >
               <svg class="info-icon" width="16px" height="12px">
               <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg><span> info@devstudio.com</span></a
+            </svg><span>info@devstudio.com</span></a
             >
           </li>
           <li class="info-list-item">
@@ -400,39 +400,55 @@
               </a>
             </li>
           </ul>
-        </address>
+              </address>
        </div>
 
-        <div class="join-container">
-         <div class="container-footer-svg">
-          <h3 class="footer-title">Присоединяйтесь</h3>
-          <ul class="social-footer-list"> 
-             <li class="social-footer-item">
-               <a class="social-footer-link" href="#">
-                    <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-instagram"></use></svg></a></li>
+          <div class="join-container">
+          
+            <h3 class="footer-title">Присоединяйтесь</h3>
+            <ul class="social-footer-list"> 
+              <li class="social-footer-item">
+                <a class="social-footer-link" href="#">
+                      <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                      
+                      <li class="social-footer-item">
+                <a class="social-footer-link" href="#">
+                  <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-twitter"></use></svg></a></li>
                     
-                    <li class="social-footer-item">
-               <a class="social-footer-link" href="#">
-                 <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-twitter"></use></svg></a></li>
-                   
-                 <li class="social-footer-item">
-               <a class="social-footer-link" href="#">                 
-                 <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-facebook"></use></svg></a></li>
-                   
-                <li class="social-footer-item">
-               <a class="social-footer-link" href="#"> 
-                   <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-linkedin"></use></svg></a></li>
-                
-          </ul>
+                  <li class="social-footer-item">
+                <a class="social-footer-link" href="#">                 
+                  <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                    
+                  <li class="social-footer-item">
+                <a class="social-footer-link" href="#"> 
+                    <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+            </ul>
+            
           </div>
-        </div>
-      </div>
       
+        <div class="footer-container">
+          <div class="footer-input">
+         
+              <h3 class="footer-title">Подпишитесь на рассылку</h3>
+              <div class="">
+                    <form class="footer-box" >
+                      
+                      <input class="footer-email" type="email" name="email" placeholder="E-mail" id="mail" autocomplete="on"/>
+                  
+                    <button class="footer-buttom" type="submit">Подписаться
+                      <svg class="footer-buttom-icon" width="24px" height="24px" ><use href="./images/symbol-defs.svg#icon-send-1f"></use></svg>
+                    </button>
+                  </form>
+              </div>
+            </div>
+          </div>
+      </div>
     </footer>
 
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        
         <div class="close">
          <button class="modal-close" data-modal-close>
           <svg class="modal-icon">
@@ -440,6 +456,45 @@
           </svg>
          </button>
         </div>
+        <div class="backdrop-modal">
+              <h3 class="modal-name">Оставьте свои данные, мы вам перезвоним</h3>
+        
+              <form>
+                    <div class="backdrop-box">
+                      <label for="name">Имя</label>
+                        <input class="cvb" type="text" name="name" id="name" autofocus>
+                        <svg  class="backdrop-icon"><use href="./images/symbol-defs-1.svg#icon-person-black"></use></svg>
+                    </div>
+
+                    <div class="backdrop-box">
+                        <label for="tel">Телефон</label>
+                          <input class="cvb" type="tel" name="tel">
+                        <svg class="backdrop-icon"><use href="./images/symbol-defs-1.svg#icon-phone-black"></use></svg>
+                    </div>
+
+                    <div class="backdrop-box">
+                    <label for="">Почта</label>
+                      <input class="cvb" type="text">
+                      <svg class="backdrop-icon"><use href="./images/symbol-defs-1.svg#icon-email-black"></use></svg>
+                    </div>
+
+                      <div class="backdrop-box">
+                    <label for="">
+                      Коментарий</label>
+                      <textarea class="ghj" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                    </div>
+
+                
+              </form>
+
+              <div class="backdrop-box" role="group">
+                  <input type="checkbox">
+                  <label class="" for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+
+                <button class="backdrop-button" >Отправить</button>
+              </div>
+              
+              </div>
       </div>
     </div>
     <script src="./modal.js"></script>
