@@ -449,52 +449,69 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         
-        <div class="close">
-         <button class="modal-close" data-modal-close>
-          <svg class="modal-icon">
-            <use href="./images/symbol-defs.svg#icon-close" ></use>
-          </svg>
-         </button>
-        </div>
-        <div class="backdrop-modal">
-              <h3 class="modal-name">Оставьте свои данные, мы вам перезвоним</h3>
+          <div class="close">
+           
+          <button class="modal-close" data-modal-close>
+            
+            <svg class="modal-icon">
+              <use href="./images/symbol-defs.svg#icon-close" ></use>
+            </svg>
+          </button>
+          </div>
+         <div class="backdrop-modal">
+              <p class="modal-name">Оставьте свои данные, мы вам перезвоним</p>
         
               <form>
                     <div class="backdrop-box">
-                      <label for="name">Имя</label>
-                        <input class="cvb" type="text" name="name" id="name" autofocus>
-                        <svg  class="backdrop-icon"><use href="./images/symbol-defs-1.svg#icon-person-black"></use></svg>
-                    </div>
+                        <label class="box" for="name">Имя</label>
+                        <div class="backdrop-label">
+                          <input class="backdrop-input" type="text" name="name" id="name" autofocus>
+                          <svg  class="backdrop-icon"><use href="./images/symbol-defs.svg#icon-person-black"></use></svg>
+                        </div>
+                     </div>
 
                     <div class="backdrop-box">
-                        <label for="tel">Телефон</label>
-                          <input class="cvb" type="tel" name="tel">
-                        <svg class="backdrop-icon"><use href="./images/symbol-defs-1.svg#icon-phone-black"></use></svg>
-                    </div>
+                        <label  for="tel">Телефон</label>
+                        <div class="backdrop-label">
+                          <input class="backdrop-input" type="tel" name="tel">
+                        <svg class="backdrop-icon"><use href="./images/symbol-defs.svg#icon-phone-black"></use></svg>
+                          </div>
+                      </div>
 
                     <div class="backdrop-box">
-                    <label for="">Почта</label>
-                      <input class="cvb" type="text">
-                      <svg class="backdrop-icon"><use href="./images/symbol-defs-1.svg#icon-email-black"></use></svg>
+                    <label class="" for="">Почта</label>
+                    <div class="backdrop-label">
+                      <input class="backdrop-input" type="text">
+                      <svg class="backdrop-icon"><use href="./images/symbol-defs.svg#icon-email-black"></use></svg>
+                      </div>
                     </div>
 
                       <div class="backdrop-box">
-                    <label for="">
-                      Коментарий</label>
-                      <textarea class="ghj" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                        <label class="comment" for="comment">Коментарий</label>
+                          <div class="backdrop-comment">
+                          <textarea class="ghj" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                          </div>
                     </div>
 
                 
               </form>
 
-              <div class="backdrop-box" role="group">
-                  <input type="checkbox">
-                  <label class="" for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+   
+                  <label class="check" for="policy">
+                  <input class="check-input" type="checkbox" name="policy">
+                  <span class="checkbox">
+                     <svg class="checkbox-icon"  width="16px" height="15px" >
+                      <use href="./images\symbol-defs987.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                 <div class="check-text"> Соглашаюсь с рассылкой и принимаю<a class="dfg" href=""> Условия договора</a></div></label>
+                
 
-                <button class="backdrop-button" >Отправить</button>
-              </div>
+                <div class="modal-buttom">
+                 <button class="backdrop-button">Отправить</button>
+                 </div>
               
-              </div>
+             </div>
       </div>
     </div>
     <script src="./modal.js"></script>
