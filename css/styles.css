@@ -954,7 +954,8 @@ border: 1px solid var(--accent-color);
 .form-checkbox-icon {
   padding: 0;
   margin: 0;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
+  padding-left: 2px;
 }
 .check-href {
   text-decoration: underline;
